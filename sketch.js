@@ -61,9 +61,7 @@ function setup() {
 }
 
 function draw() {
-  //background(random(0, 255), random(0, 255), random(0, 255));
-  //console.log(player.velocityX, player.velocityY);
-  background(255)
+  background(random(0, 255), random(0, 255), random(0, 255));
   
   if (keyCode === 37){
     player.velocityX = random(-1, -5);
@@ -175,7 +173,8 @@ function draw() {
     
     player.destroy();
     target.destroy();
-    text("YOU WIN!!!", 160, 200)
+    background(255);
+    text("YOU WIN!!!", 160, 200);
   }
   
   drawSprites();
