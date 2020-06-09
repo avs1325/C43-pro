@@ -61,7 +61,7 @@ function setup() {
 }
 
 function draw() {
-  background(random(0, 255), random(0, 255), random(0, 255));
+  background(0);
   
   if (keyCode === 37){
     player.velocityX = random(-1, -5);
